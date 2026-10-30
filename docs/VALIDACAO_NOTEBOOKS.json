@@ -1,0 +1,140 @@
+{
+  "status": "passed",
+  "notebooks": 13,
+  "code_cells": 304,
+  "embedded_modules_or_stages": 49,
+  "error_outputs": 0,
+  "canonical_run_id": "20260809_223452_c0613d3c",
+  "canonical_executed_notebook_sha256": "3e90e89858655dfbba39a1824ddf48c0b44004f82d0c33121d453fe15e224318",
+  "source_executed_pairs": [
+    {
+      "source": "notebooks/08_cremad_fairness_xai_emot_definitivo_colab_pro.ipynb",
+      "executed": "notebooks/executed/08_cremad_fairness_xai_emot_definitivo_colab_pro.ipynb",
+      "code_identical": true
+    },
+    {
+      "source": "notebooks/09_cremad_figuras_cientificas_v3_colab.ipynb",
+      "executed": "notebooks/executed/09_cremad_figuras_cientificas_v3_colab.ipynb",
+      "code_identical": true
+    }
+  ],
+  "english_translation_checks": [
+    {
+      "source": "08_cremad_fairness_xai_emot_definitivo_colab_pro.ipynb",
+      "translation": "cremad_emot_definitive_colab.ipynb",
+      "python_ast_identical": true
+    },
+    {
+      "source": "09_cremad_figuras_cientificas_v3_colab.ipynb",
+      "translation": "generate_paper_figures.ipynb",
+      "python_ast_identical": true
+    }
+  ],
+  "full_experiment_rerun": false,
+  "files": [
+    {
+      "path": "notebooks/01_ingest_qc_manifest.ipynb",
+      "sha256": "0cfa3dbfd6c9924d38cc621c148112af94a4667b1eaf62f5837f991595518f25",
+      "code_cells": 14,
+      "embedded_modules_or_stages": 0,
+      "outputs": 19,
+      "schema_warnings": 0
+    },
+    {
+      "path": "notebooks/02_preprocess_T100_dataset.ipynb",
+      "sha256": "b0b3c8e01792e093eb62e01825c7ee14d7256a3be48700e7bbbcffe0e6375a7b",
+      "code_cells": 10,
+      "embedded_modules_or_stages": 0,
+      "outputs": 13,
+      "schema_warnings": 0
+    },
+    {
+      "path": "notebooks/03_split_actor_holdout.ipynb",
+      "sha256": "a7f620a5d6f009f96024ecee430facd1e75654fb3b8f24ec9953772b2194520c",
+      "code_cells": 6,
+      "embedded_modules_or_stages": 0,
+      "outputs": 7,
+      "schema_warnings": 0
+    },
+    {
+      "path": "notebooks/04_train_eval_models.ipynb",
+      "sha256": "b9830c433921738c82dd5eb707a40e54d41288457c5490162a411166c025278a",
+      "code_cells": 17,
+      "embedded_modules_or_stages": 0,
+      "outputs": 21,
+      "schema_warnings": 0
+    },
+    {
+      "path": "notebooks/05_xai_attention_deletion.ipynb",
+      "sha256": "5730cbfd3b94ec2f29268f07d37c894842ba5853ae8e435e600cbe58dae8c937",
+      "code_cells": 16,
+      "embedded_modules_or_stages": 0,
+      "outputs": 19,
+      "schema_warnings": 0
+    },
+    {
+      "path": "notebooks/06_cremad_fairness_xai_emot_final_colab.ipynb",
+      "sha256": "a1c7a7750da0a064493cd311107bd46fed549bbba3697eae0bf145c11ad8295f",
+      "code_cells": 37,
+      "embedded_modules_or_stages": 0,
+      "outputs": 0,
+      "schema_warnings": 0
+    },
+    {
+      "path": "notebooks/07_cremad_fairness_xai_emot_resumable_colab_pro.ipynb",
+      "sha256": "f3910bd917b44cb3cb553f760ee82bc33c309b33fef7f74d9db8d8458a08dd97",
+      "code_cells": 39,
+      "embedded_modules_or_stages": 10,
+      "outputs": 0,
+      "schema_warnings": 3
+    },
+    {
+      "path": "notebooks/08_cremad_fairness_xai_emot_definitivo_colab_pro.ipynb",
+      "sha256": "b3a88fe90378d8de9c7e733beba44fd5855b95d5a0b31577d8c5cb790f7c7abf",
+      "code_cells": 45,
+      "embedded_modules_or_stages": 13,
+      "outputs": 0,
+      "schema_warnings": 0
+    },
+    {
+      "path": "notebooks/09_cremad_figuras_cientificas_v3_colab.ipynb",
+      "sha256": "b5ea007012790a3426ec4cd0a3056733cad58587e2ae19bcfad2fcd755c3c344",
+      "code_cells": 10,
+      "embedded_modules_or_stages": 0,
+      "outputs": 0,
+      "schema_warnings": 0
+    },
+    {
+      "path": "notebooks/executed/08_cremad_fairness_xai_emot_definitivo_colab_pro.ipynb",
+      "sha256": "3e90e89858655dfbba39a1824ddf48c0b44004f82d0c33121d453fe15e224318",
+      "code_cells": 45,
+      "embedded_modules_or_stages": 13,
+      "outputs": 202,
+      "schema_warnings": 0
+    },
+    {
+      "path": "notebooks/executed/09_cremad_figuras_cientificas_v3_colab.ipynb",
+      "sha256": "03dc632c1b1d506a767fdc5c8157a09a7a9850628667d1c937dc6d8eb0c2780e",
+      "code_cells": 10,
+      "embedded_modules_or_stages": 0,
+      "outputs": 17,
+      "schema_warnings": 0
+    },
+    {
+      "path": "notebooks/publication_en/cremad_emot_definitive_colab.ipynb",
+      "sha256": "0a904e55d7accb5a7e426f07d1b9d5bc4b3824228d918cd1af03dc214a9fb6c7",
+      "code_cells": 45,
+      "embedded_modules_or_stages": 13,
+      "outputs": 0,
+      "schema_warnings": 0
+    },
+    {
+      "path": "notebooks/publication_en/generate_paper_figures.ipynb",
+      "sha256": "40cf62ec3f8975d09660ec8cb99b5a2f5e58657702c79f849a82f2f133cc2715",
+      "code_cells": 10,
+      "embedded_modules_or_stages": 0,
+      "outputs": 0,
+      "schema_warnings": 0
+    }
+  ]
+}

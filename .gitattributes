@@ -1,0 +1,4 @@
+* text=auto
+# Preservar os bytes das evidências e dos notebooks históricos.
+*.ipynb -text
+*.py -text
