@@ -44,3 +44,7 @@ Foram conferidos a pasta de trabalho `vit-emot-poc`, o commit histórico registr
 ## Conferência de integridade
 
 O manifesto registra o SHA-256 dos arquivos integrais e o hash do código, calculado pela concatenação das células de código com uma quebra de linha entre elas. O validador lê os notebooks sem salvar ou normalizar seus arquivos. Os hashes devem permanecer iguais para preservar a correspondência com a dissertação.
+
+## Complementos de novembro de 2026
+
+O inventário passou a incluir os Colabs 10–12, descritos em [REVISAO_20261107.md](REVISAO_20261107.md). O 10 requer os artefatos históricos completos; o 11 reutiliza cache e partições, com uma grade nova de 45 ajustes; o 12 exige o checkpoint congelado, o modelo de detecção preservado e a conferência numérica do extrator antes de obter os vídeos externos. Todos são distribuídos sem saídas e mantêm o código de apoio embutido. Os geradores ficam em `scripts/`; o manifesto oficial dos arquivos externos fica em `manifest/`.

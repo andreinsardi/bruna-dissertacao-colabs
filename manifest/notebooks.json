@@ -7,7 +7,7 @@
   "dissertation_edition": "2026-10-11",
   "canonical_run_id": "20260809_223452_c0613d3c",
   "canonical_executed_notebook_sha256": "3e90e89858655dfbba39a1824ddf48c0b44004f82d0c33121d453fe15e224318",
-  "inventory_scope": "Notebooks 01–09 do projeto, execuções 08 e 09 e duas versões em inglês do pacote do artigo; cópias idênticas deduplicadas.",
+  "inventory_scope": "Notebooks 01–12, execuções históricas 08/09 e duas versões em inglês; revisões 10–12 distribuídas sem saídas.",
   "notebooks": [
     {
       "path": "notebooks/01_ingest_qc_manifest.ipynb",
@@ -177,6 +177,46 @@
       "code_cells": 10,
       "outputs": 0,
       "error_outputs": 0
+    },
+    {
+      "path": "notebooks/10_cremad_figuras_corrigidas_v4_colab.ipynb",
+      "category": "supplementary_revision_source",
+      "description": "Regeneração das figuras com correção de sobreposições; artefatos históricos preservados",
+      "source": "Revisão metodológica dos autores, 2026-11-07; versão sem saídas para reprodução",
+      "bytes": 59604,
+      "sha256": "0b1802c1f26f1449d0577f1122164730e9651b3b6db4d71346f78f51c01587ce",
+      "code_sha256": "dc2b5e7cd135cee3bff3dab5f3a17c42ea3deeaf2f9dd554c1958f4750e31260",
+      "cells": 16,
+      "code_cells": 10,
+      "outputs": 0,
+      "error_outputs": 0
+    },
+    {
+      "path": "notebooks/11_cremad_metodologia_final_colab.ipynb",
+      "category": "supplementary_revision_source",
+      "description": "45 ajustes controlados, ablação conjunta e aleatorização dos parâmetros para IG",
+      "source": "Revisão metodológica dos autores, 2026-11-07; versão sem saídas para reprodução",
+      "bytes": 91064,
+      "sha256": "68b3bbe550a4fc755b6159df03932952f42c68d06e6474ae92f4cef5862c7f4a",
+      "code_sha256": "c02ff84fc59243daa3d7bfbba95c571bd96f25c74b95f6580ce0729a4034ecd7",
+      "cells": 13,
+      "code_cells": 7,
+      "outputs": 0,
+      "error_outputs": 0
+    },
+    {
+      "path": "notebooks/12_ravdess_validacao_externa_cremad_colab.ipynb",
+      "category": "supplementary_revision_source",
+      "description": "Validação externa congelada CREMA-D → RAVDESS com conferência numérica do extrator",
+      "source": "Revisão metodológica dos autores, 2026-11-07; versão sem saídas para reprodução",
+      "bytes": 132946,
+      "sha256": "62615aa58a448c00d8fb5701c1405f3a612a71ce951fa083c3e49378494f5e8b",
+      "code_sha256": "b50bff31ec8712ebefec03775cb0998988c882674574f15fbdf0009f91fa69a3",
+      "cells": 14,
+      "code_cells": 8,
+      "outputs": 0,
+      "error_outputs": 0
     }
-  ]
+  ],
+  "revision_notebooks_added_on": "2026-11-07"
 }

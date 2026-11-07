@@ -2,7 +2,7 @@
 
 Acervo computacional da dissertação **Inteligência artificial explicável e equidade no reconhecimento de expressões faciais em vídeo com Transformers espaço–temporais**, edição de 11/10/2026, Faculdade de Tecnologia da UNICAMP. Autora: Bruna Carolina Rodrigues. Orientador: Prof. Dr. Marco Antônio Garcia de Carvalho.
 
-Este repositório reúne **13 notebooks**: a sequência 01–09, as execuções preservadas de 08 e 09 e duas versões em inglês do artigo associado. Inclui os módulos de apoio, geradores, testes e o manifesto de integridade. O [inventário completo](docs/INVENTARIO.md) contém um link para abrir cada notebook no Google Colab.
+Este repositório reúne **16 notebooks**: a sequência 01–12, as execuções preservadas de 08 e 09 e duas versões em inglês do artigo associado. Inclui os módulos de apoio, geradores, testes e o manifesto de integridade. O [inventário completo](docs/INVENTARIO.md) contém um link para abrir cada notebook no Google Colab. Os Colabs 10–12 documentam a [revisão metodológica de novembro de 2026](docs/REVISAO_20261107.md); suas cópias são distribuídas sem saídas para reprodução.
 
 ## Comece por estes dois notebooks
 
@@ -36,7 +36,7 @@ O [mapa de resultados](docs/RESULTADOS_E_EXPLICABILIDADE.md) relaciona os métod
 ## Organização
 
 ```text
-notebooks/                 # sequência 01–09
+notebooks/                 # sequência 01–12
   executed/                # cópias 08 e 09 com as saídas originais
   publication_en/          # duas versões do artigo em inglês
 src/                       # módulos históricos da prova de conceito RAVDESS
@@ -57,7 +57,7 @@ python scripts/validate_notebooks.py
 python -m unittest discover -s tests -v
 ```
 
-A validação confere formato, hashes, sintaxe das células e dos módulos embutidos, ausência de saídas de erro e equivalência do código entre as cópias limpas e executadas. Os testes exercitam a recuperação de etapas e a separação por ator. Eles não executam um novo treinamento completo nem exigem acesso ao Drive dos autores. O [registro de validação](docs/VALIDACAO.md) descreve os 11 testes aprovados e as verificações realizadas no acervo.
+A validação confere formato, hashes, sintaxe das células e dos módulos embutidos, ausência de saídas de erro e equivalência do código entre as cópias limpas e executadas. Os testes exercitam a recuperação de etapas, os contratos científicos e a separação por ator. Eles não executam um novo treinamento completo nem exigem acesso ao Drive dos autores. O [registro de validação](docs/VALIDACAO.md) descreve os 49 testes aprovados e as verificações realizadas no acervo.
 
 ## Dados, ambiente e autoria
 

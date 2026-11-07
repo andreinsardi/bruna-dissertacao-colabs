@@ -1,7 +1,7 @@
 {
   "status": "passed",
-  "notebooks": 13,
-  "code_cells": 304,
+  "notebooks": 16,
+  "code_cells": 329,
   "embedded_modules_or_stages": 49,
   "error_outputs": 0,
   "canonical_run_id": "20260809_223452_c0613d3c",
@@ -132,6 +132,30 @@
       "path": "notebooks/publication_en/generate_paper_figures.ipynb",
       "sha256": "40cf62ec3f8975d09660ec8cb99b5a2f5e58657702c79f849a82f2f133cc2715",
       "code_cells": 10,
+      "embedded_modules_or_stages": 0,
+      "outputs": 0,
+      "schema_warnings": 0
+    },
+    {
+      "path": "notebooks/10_cremad_figuras_corrigidas_v4_colab.ipynb",
+      "sha256": "0b1802c1f26f1449d0577f1122164730e9651b3b6db4d71346f78f51c01587ce",
+      "code_cells": 10,
+      "embedded_modules_or_stages": 0,
+      "outputs": 0,
+      "schema_warnings": 0
+    },
+    {
+      "path": "notebooks/11_cremad_metodologia_final_colab.ipynb",
+      "sha256": "68b3bbe550a4fc755b6159df03932952f42c68d06e6474ae92f4cef5862c7f4a",
+      "code_cells": 7,
+      "embedded_modules_or_stages": 0,
+      "outputs": 0,
+      "schema_warnings": 13
+    },
+    {
+      "path": "notebooks/12_ravdess_validacao_externa_cremad_colab.ipynb",
+      "sha256": "62615aa58a448c00d8fb5701c1405f3a612a71ce951fa083c3e49378494f5e8b",
+      "code_cells": 8,
       "embedded_modules_or_stages": 0,
       "outputs": 0,
       "schema_warnings": 0

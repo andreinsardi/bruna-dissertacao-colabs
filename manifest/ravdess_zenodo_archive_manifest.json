@@ -1,0 +1,151 @@
+{
+  "record_id": "1188976",
+  "doi": "10.5281/zenodo.1188976",
+  "fetched_utc": "2026-11-07T19:54:04.5201880Z",
+  "files": [
+    {
+      "name": "Video_Speech_Actor_06.zip",
+      "size": 568517859,
+      "checksum": "md5:3c42877921cc08cfb5c841a0f2cb94a7",
+      "url": "https://zenodo.org/api/records/1188976/files/Video_Speech_Actor_06.zip/content"
+    },
+    {
+      "name": "Video_Speech_Actor_09.zip",
+      "size": 523489249,
+      "checksum": "md5:775da349c50bf915a1bbcb37379bd092",
+      "url": "https://zenodo.org/api/records/1188976/files/Video_Speech_Actor_09.zip/content"
+    },
+    {
+      "name": "Video_Speech_Actor_05.zip",
+      "size": 562966425,
+      "checksum": "md5:b00e17d61374ef6ba86fef35d50a20fb",
+      "url": "https://zenodo.org/api/records/1188976/files/Video_Speech_Actor_05.zip/content"
+    },
+    {
+      "name": "Video_Speech_Actor_04.zip",
+      "size": 546560009,
+      "checksum": "md5:013eed832af1f7e97082aae398a00dbe",
+      "url": "https://zenodo.org/api/records/1188976/files/Video_Speech_Actor_04.zip/content"
+    },
+    {
+      "name": "Video_Speech_Actor_01.zip",
+      "size": 552968353,
+      "checksum": "md5:3c8ececaf392b4a9b11b32271f4f6d01",
+      "url": "https://zenodo.org/api/records/1188976/files/Video_Speech_Actor_01.zip/content"
+    },
+    {
+      "name": "Video_Speech_Actor_08.zip",
+      "size": 562573079,
+      "checksum": "md5:bed5f43d9c18e177e34d4bc1ed9b6d77",
+      "url": "https://zenodo.org/api/records/1188976/files/Video_Speech_Actor_08.zip/content"
+    },
+    {
+      "name": "Video_Speech_Actor_07.zip",
+      "size": 565652404,
+      "checksum": "md5:bdd29bfe082f80361ec6b589845c283d",
+      "url": "https://zenodo.org/api/records/1188976/files/Video_Speech_Actor_07.zip/content"
+    },
+    {
+      "name": "Video_Speech_Actor_13.zip",
+      "size": 501877549,
+      "checksum": "md5:c5f2fd4fd77941636947620368c612b5",
+      "url": "https://zenodo.org/api/records/1188976/files/Video_Speech_Actor_13.zip/content"
+    },
+    {
+      "name": "Video_Speech_Actor_12.zip",
+      "size": 557928718,
+      "checksum": "md5:2a1f0ddc0ca207beedee6ce2ea863ad7",
+      "url": "https://zenodo.org/api/records/1188976/files/Video_Speech_Actor_12.zip/content"
+    },
+    {
+      "name": "Video_Speech_Actor_11.zip",
+      "size": 518634370,
+      "checksum": "md5:824504aa41a8fd575e5459d5701dd378",
+      "url": "https://zenodo.org/api/records/1188976/files/Video_Speech_Actor_11.zip/content"
+    },
+    {
+      "name": "Video_Speech_Actor_03.zip",
+      "size": 567824665,
+      "checksum": "md5:68fa240ddd8a3cc410c64efe5fb2b0e4",
+      "url": "https://zenodo.org/api/records/1188976/files/Video_Speech_Actor_03.zip/content"
+    },
+    {
+      "name": "Video_Speech_Actor_18.zip",
+      "size": 565655520,
+      "checksum": "md5:fef2131ac361da182c0cb85f3d8e8a6c",
+      "url": "https://zenodo.org/api/records/1188976/files/Video_Speech_Actor_18.zip/content"
+    },
+    {
+      "name": "Video_Speech_Actor_17.zip",
+      "size": 551688845,
+      "checksum": "md5:8b7ae3e5a85d2874ac8e1195e722e047",
+      "url": "https://zenodo.org/api/records/1188976/files/Video_Speech_Actor_17.zip/content"
+    },
+    {
+      "name": "Video_Speech_Actor_16.zip",
+      "size": 562416513,
+      "checksum": "md5:a63c54570ebbe6bd616d0dced5630f7e",
+      "url": "https://zenodo.org/api/records/1188976/files/Video_Speech_Actor_16.zip/content"
+    },
+    {
+      "name": "Video_Speech_Actor_24.zip",
+      "size": 595799165,
+      "checksum": "md5:eef90e806c9179bc5b4b098d03647ae3",
+      "url": "https://zenodo.org/api/records/1188976/files/Video_Speech_Actor_24.zip/content"
+    },
+    {
+      "name": "Video_Speech_Actor_23.zip",
+      "size": 545177865,
+      "checksum": "md5:b31e8c8904e66102e7a951694db752d6",
+      "url": "https://zenodo.org/api/records/1188976/files/Video_Speech_Actor_23.zip/content"
+    },
+    {
+      "name": "Video_Speech_Actor_22.zip",
+      "size": 560907466,
+      "checksum": "md5:fee55f72c9871401f23d4b167de3217d",
+      "url": "https://zenodo.org/api/records/1188976/files/Video_Speech_Actor_22.zip/content"
+    },
+    {
+      "name": "Video_Speech_Actor_15.zip",
+      "size": 525205576,
+      "checksum": "md5:4b3b9bc8473e86f884630f2506684887",
+      "url": "https://zenodo.org/api/records/1188976/files/Video_Speech_Actor_15.zip/content"
+    },
+    {
+      "name": "Video_Speech_Actor_14.zip",
+      "size": 552484059,
+      "checksum": "md5:466d31f4cce92a14b1f4ee884bbdf7d7",
+      "url": "https://zenodo.org/api/records/1188976/files/Video_Speech_Actor_14.zip/content"
+    },
+    {
+      "name": "Video_Speech_Actor_10.zip",
+      "size": 565580163,
+      "checksum": "md5:70199d1c6902f76e17df308d5c41fa01",
+      "url": "https://zenodo.org/api/records/1188976/files/Video_Speech_Actor_10.zip/content"
+    },
+    {
+      "name": "Video_Speech_Actor_02.zip",
+      "size": 570673024,
+      "checksum": "md5:a6f40d413b2e6ef25b3a595099e59abb",
+      "url": "https://zenodo.org/api/records/1188976/files/Video_Speech_Actor_02.zip/content"
+    },
+    {
+      "name": "Video_Speech_Actor_21.zip",
+      "size": 590292896,
+      "checksum": "md5:d810cf2ff6863ef91306fc7a16d74fbb",
+      "url": "https://zenodo.org/api/records/1188976/files/Video_Speech_Actor_21.zip/content"
+    },
+    {
+      "name": "Video_Speech_Actor_20.zip",
+      "size": 561349264,
+      "checksum": "md5:5ddfb22770093bafebdefe8faa449f48",
+      "url": "https://zenodo.org/api/records/1188976/files/Video_Speech_Actor_20.zip/content"
+    },
+    {
+      "name": "Video_Speech_Actor_19.zip",
+      "size": 581121687,
+      "checksum": "md5:abb97d97d8c4e88c866cee1cea9d06d6",
+      "url": "https://zenodo.org/api/records/1188976/files/Video_Speech_Actor_19.zip/content"
+    }
+  ]
+}

@@ -5,8 +5,8 @@ title: "Colabs da dissertação de Bruna Carolina Rodrigues: reconhecimento de e
 authors:
   - family-names: Rodrigues
     given-names: Bruna Carolina
-version: 1.0.0
-date-released: 2026-10-30
+version: 1.1.0
+date-released: 2026-11-07
 repository-code: "https://github.com/andreinsardi/bruna-dissertacao-colabs"
 url: "https://github.com/andreinsardi/bruna-dissertacao-colabs"
 abstract: "Notebooks e módulos associados à dissertação em Tecnologia da FT/UNICAMP, incluindo o protocolo definitivo CREMA-D e o acervo histórico RAVDESS."

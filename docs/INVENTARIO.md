@@ -1,6 +1,6 @@
 # Inventário dos notebooks
 
-O acervo contém **13 notebooks**: nove etapas/versões numeradas, duas execuções preservadas e duas versões em inglês. Todos os arquivos `.ipynb` foram copiados sem alteração de conteúdo. O manifesto registra origem, tamanho, SHA-256, contagem de células e saídas, além do hash do código sem as saídas. Cópias idênticas encontradas em outros pacotes e diretórios não foram repetidas.
+O acervo contém **16 notebooks**: doze etapas/versões numeradas, duas execuções preservadas e duas versões em inglês. Os treze arquivos históricos permanecem preservados; os três complementares de novembro foram acrescentados como versões sem saídas para reprodução. O manifesto registra origem, tamanho, SHA-256, contagem de células e saídas, além do hash do código sem as saídas. Cópias idênticas encontradas em outros pacotes e diretórios não foram repetidas.
 
 | Arquivo | Finalidade | Saídas preservadas | Google Colab |
 |---|---|---:|---|
@@ -17,6 +17,9 @@ O acervo contém **13 notebooks**: nove etapas/versões numeradas, duas execuç�
 | [notebooks/executed/09_cremad_figuras_cientificas_v3_colab.ipynb](../notebooks/executed/09_cremad_figuras_cientificas_v3_colab.ipynb) | Execução preservada da geração de figuras, com 17 saídas | 17 | [Abrir no Colab](https://colab.research.google.com/github/andreinsardi/bruna-dissertacao-colabs/blob/main/notebooks/executed/09_cremad_figuras_cientificas_v3_colab.ipynb) |
 | [notebooks/publication_en/cremad_emot_definitive_colab.ipynb](../notebooks/publication_en/cremad_emot_definitive_colab.ipynb) | Versão em inglês preparada para o artigo associado | 0 | [Abrir no Colab](https://colab.research.google.com/github/andreinsardi/bruna-dissertacao-colabs/blob/main/notebooks/publication_en/cremad_emot_definitive_colab.ipynb) |
 | [notebooks/publication_en/generate_paper_figures.ipynb](../notebooks/publication_en/generate_paper_figures.ipynb) | Versão em inglês preparada para o artigo associado | 0 | [Abrir no Colab](https://colab.research.google.com/github/andreinsardi/bruna-dissertacao-colabs/blob/main/notebooks/publication_en/generate_paper_figures.ipynb) |
+| [10 — Figuras corrigidas](../notebooks/10_cremad_figuras_corrigidas_v4_colab.ipynb) | Regeneração dos painéis experimental e de arquitetura, com dados canônicos | 0 | [Abrir no Colab](https://colab.research.google.com/github/andreinsardi/bruna-dissertacao-colabs/blob/main/notebooks/10_cremad_figuras_corrigidas_v4_colab.ipynb) |
+| [11 — Robustez e ablação](../notebooks/11_cremad_metodologia_final_colab.ipynb) | 45 ajustes, três sementes, cinco folds, três condições e aleatorização de IG | 0 | [Abrir no Colab](https://colab.research.google.com/github/andreinsardi/bruna-dissertacao-colabs/blob/main/notebooks/11_cremad_metodologia_final_colab.ipynb) |
+| [12 — Validação externa](../notebooks/12_ravdess_validacao_externa_cremad_colab.ipynb) | Checkpoints CREMA-D congelados aplicados aos vídeos RAVDESS compatíveis | 0 | [Abrir no Colab](https://colab.research.google.com/github/andreinsardi/bruna-dissertacao-colabs/blob/main/notebooks/12_ravdess_validacao_externa_cremad_colab.ipynb) |
 
 ## Qual notebook representa o resultado da dissertação?
 
