@@ -5,7 +5,9 @@ import hashlib
 import json
 
 ROOT=Path(__file__).resolve().parents[1]
-SOURCE=ROOT.parent/'bruna-dissertacao-colabs/notebooks/executed/08_cremad_fairness_xai_emot_definitivo_colab_pro.ipynb'
+SOURCE=ROOT/'notebooks/executed/08_cremad_fairness_xai_emot_definitivo_colab_pro.ipynb'
+if not SOURCE.exists():
+    SOURCE=ROOT.parent/'bruna-dissertacao-colabs/notebooks/executed/08_cremad_fairness_xai_emot_definitivo_colab_pro.ipynb'
 EXTRACTOR=ROOT/'scripts/bruna_ravdess_canonical_extractor.py'
 DEST=ROOT/'notebooks/12_ravdess_validacao_externa_cremad_colab.ipynb'
 CANONICAL_HASH='3e90e89858655dfbba39a1824ddf48c0b44004f82d0c33121d453fe15e224318'

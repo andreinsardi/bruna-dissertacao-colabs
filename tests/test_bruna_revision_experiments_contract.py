@@ -24,7 +24,9 @@ def toy_manifest():
 
 class ScientificContracts(unittest.TestCase):
     def test_model_classes_match_the_executed_canonical_source(self):
-        path=ROOT.parent/'bruna-dissertacao-colabs/notebooks/executed/08_cremad_fairness_xai_emot_definitivo_colab_pro.ipynb'
+        path=ROOT/'notebooks/executed/08_cremad_fairness_xai_emot_definitivo_colab_pro.ipynb'
+        if not path.exists():
+            path=ROOT.parent/'bruna-dissertacao-colabs/notebooks/executed/08_cremad_fairness_xai_emot_definitivo_colab_pro.ipynb'
         data=path.read_bytes()
         self.assertEqual(hashlib.sha256(data).hexdigest(),'3e90e89858655dfbba39a1824ddf48c0b44004f82d0c33121d453fe15e224318')
         canonical=''.join(json.loads(data)['cells'][42]['source'])
