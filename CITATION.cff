@@ -9,7 +9,7 @@ version: 1.1.0
 date-released: 2026-11-07
 repository-code: "https://github.com/andreinsardi/bruna-dissertacao-colabs"
 url: "https://github.com/andreinsardi/bruna-dissertacao-colabs"
-abstract: "Notebooks e módulos associados à dissertação em Tecnologia da FT/UNICAMP, incluindo o protocolo definitivo CREMA-D e o acervo histórico RAVDESS."
+abstract: "Notebooks e módulos associados à dissertação em Tecnologia da FT/UNICAMP, incluindo o protocolo definitivo CREMA-D, o acervo histórico RAVDESS e a revisão com repetições, ablação, testes dos mapas explicativos e avaliação congelada entre bases."
 keywords:
   - CREMA-D
   - RAVDESS
