@@ -4,7 +4,7 @@
 
 A edição de 11/10/2026 identifica a execução `20260809_223452_c0613d3c`. A exportação executada do notebook 08 tem SHA-256 `3e90e89858655dfbba39a1824ddf48c0b44004f82d0c33121d453fe15e224318`, igual ao informado no apêndice. A cópia limpa e a executada têm exatamente o mesmo texto nas 45 células de código. A exportação do notebook 09 também mantém o mesmo código da cópia limpa.
 
-Não foi repetido o treinamento durante a preparação deste repositório. As saídas dos notebooks executados foram preservadas sem reescrita. Os notebooks 01–05, seus módulos `src/` e as versões 06–09 também foram copiados sem alteração. Os geradores estão presentes para rastreabilidade, mas executá-los pode regravar os notebooks de destino; use uma cópia separada se desejar regenerá-los.
+Na organização inicial do acervo, publicada como v1.0.0, não foi repetido o treinamento. As saídas dos notebooks executados foram preservadas sem reescrita. Os notebooks 01–05, seus módulos `src/` e as versões 06–09 também foram copiados sem alteração. A revisão de novembro acrescentou os novos ajustes documentados no Colab 11, preservando esses arquivos históricos. Os geradores estão presentes para rastreabilidade, mas executá-los pode regravar os notebooks de destino; use uma cópia separada se desejar regenerá-los.
 
 ## Entradas e persistência
 
@@ -17,6 +17,8 @@ O notebook 09 não treina. Ele espera o manifesto de amostras, o cache de marcos
 ## Ambiente observado
 
 A saída preservada do notebook 08 registra Google Colab Pro, GPU NVIDIA A100-SXM4-80GB, PyTorch `2.11.0+cu128` e MediaPipe `1.0.0`, com backend `tasks`. São versões observadas no arquivo executado, não uma alegação de disponibilidade atual em todo ambiente Colab.
+
+A auditoria de novembro identificou que essa execução reutilizou um cache consolidado de 25/06/2026. Portanto, a versão impressa no notebook de agosto não identifica necessariamente a versão que extraiu os marcos preservados. O Colab 12 fixa MediaPipe `0.10.35` e OpenCV headless `4.13.0.92`, configuração que reproduziu exatamente os seis vídeos de controle, com o mesmo arquivo de modelo. Essa conferência não comprova identidade para todo o conjunto de 7.441 sequências nem reconstrói integralmente o ambiente histórico. Os notebooks históricos permanecem intactos; executá-los hoje com suas instalações originais `--upgrade` exige nova conferência do ambiente e dos dados produzidos.
 
 Não foi localizado um `pip freeze` integral do ambiente. A célula original usa instalações com `--upgrade`; versões futuras podem mudar APIs e dependências. `requirements.txt` descreve as bibliotecas exigidas e não garante reprodução exata do ambiente histórico. A saída original de instalação também conserva um aviso de incompatibilidade de versão de `requests` com o pacote `google-colab`; a execução terminou com o marcador de conclusão e sem saídas de erro do Jupyter. O aviso foi preservado como parte do registro.
 

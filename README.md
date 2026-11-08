@@ -4,7 +4,7 @@ Acervo computacional da dissertação **Inteligência artificial explicável e e
 
 Este repositório reúne **16 notebooks**: a sequência 01–12, as execuções preservadas de 08 e 09 e duas versões em inglês do artigo associado. Inclui os módulos de apoio, geradores, testes e o manifesto de integridade. O [inventário completo](docs/INVENTARIO.md) contém um link para abrir cada notebook no Google Colab. Os Colabs 10–12 documentam a [revisão metodológica de novembro de 2026](docs/REVISAO_20261107.md); suas cópias são distribuídas sem saídas para reprodução.
 
-## Comece por estes dois notebooks
+## Reprodução do núcleo histórico
 
 | Notebook | Uso | Google Colab |
 |---|---|---|
@@ -12,6 +12,16 @@ Este repositório reúne **16 notebooks**: a sequência 01–12, as execuções 
 | [09 — Figuras científicas](notebooks/09_cremad_figuras_cientificas_v3_colab.ipynb) | Reconstrução das figuras a partir de vídeos, tensores, modelos e resultados da execução | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andreinsardi/bruna-dissertacao-colabs/blob/main/notebooks/09_cremad_figuras_cientificas_v3_colab.ipynb) |
 
 Para consultar os resultados já produzidos, abra a [execução definitiva com as saídas](notebooks/executed/08_cremad_fairness_xai_emot_definitivo_colab_pro.ipynb) ou a [execução das figuras](notebooks/executed/09_cremad_figuras_cientificas_v3_colab.ipynb). Essas cópias são evidências preservadas; use as versões sem saídas para iniciar uma nova execução.
+
+## Revisão metodológica de novembro de 2026
+
+| Notebook | Uso |
+|---|---|
+| [10 — Figuras com layout corrigido](notebooks/10_cremad_figuras_corrigidas_v4_colab.ipynb) | Regeneração das figuras a partir dos artefatos históricos, com correção das sobreposições |
+| [11 — Robustez e explicabilidade](notebooks/11_cremad_metodologia_final_colab.ipynb) | Três sementes, cinco folds, ablação conjunta das diferenças temporais e aleatorização de parâmetros para IG |
+| [12 — Avaliação entre bases](notebooks/12_ravdess_validacao_externa_cremad_colab.ipynb) | Modelos CREMA-D congelados avaliados no RAVDESS, com conferência do extrator e bootstrap por ator |
+
+Essas fontes exigem as entradas completas descritas em [REPRODUCAO.md](docs/REPRODUCAO.md). O registro de execução e a interpretação dos novos resultados ficam em [REVISAO_20261107.md](docs/REVISAO_20261107.md).
 
 ## Execução no Google Colab
 
@@ -31,7 +41,7 @@ O notebook 08 contém o código de apoio embutido e baixa os dados a partir das 
 - O código das versões limpa e executada do 08 é idêntico; o mesmo foi conferido para o 09.
 - Protocolo: canal visual do CREMA-D, 7.441 vídeos válidos, 155 marcos faciais, 100 passos temporais e cinco partições por ator.
 
-O [mapa de resultados](docs/RESULTADOS_E_EXPLICABILIDADE.md) relaciona os métodos de XAI às figuras da dissertação. Consulte [manifest/notebooks.json](manifest/notebooks.json) e [SHA256SUMS](SHA256SUMS) para verificar os arquivos. As métricas e figuras preservadas são resultados da execução registrada; esta organização do acervo não corresponde a um novo treinamento.
+O [mapa de resultados](docs/RESULTADOS_E_EXPLICABILIDADE.md) relaciona os métodos de XAI às figuras da edição histórica da dissertação. Consulte [manifest/notebooks.json](manifest/notebooks.json) e [SHA256SUMS](SHA256SUMS) para verificar os arquivos. As saídas preservadas de 08 e 09 continuam sendo as da execução registrada. Os 45 novos ajustes do Colab 11 e as demais análises complementares são identificados separadamente em [REVISAO_20261107.md](docs/REVISAO_20261107.md).
 
 ## Organização
 
@@ -61,7 +71,7 @@ A validação confere formato, hashes, sintaxe das células e dos módulos embut
 
 ## Dados, ambiente e autoria
 
-Os vídeos brutos do CREMA-D e os CSVs RAVDESS não estão incluídos. Obtenha os dados em suas fontes e observe os respectivos termos. Os notebooks executados preservam figuras, tabelas e mensagens produzidas pelo experimento. Tensores, checkpoints e demais arquivos necessários à reconstrução integral das figuras devem ser gerados pelo protocolo ou disponibilizados pelos autores.
+Os vídeos brutos do CREMA-D e do RAVDESS e os CSVs históricos do RAVDESS não estão incluídos. Obtenha os dados em suas fontes e observe os respectivos termos. Os notebooks executados preservam figuras, tabelas e mensagens produzidas pelo experimento. Tensores, checkpoints e demais arquivos necessários à reconstrução integral das figuras devem ser gerados pelo protocolo ou disponibilizados pelos autores.
 
 `requirements.txt` é uma lista de dependências para instalação, não um congelamento integral do ambiente de 2026. Os notebooks históricos preservam seus comandos originais de instalação. Consulte o registro do ambiente em [REPRODUCAO.md](docs/REPRODUCAO.md).
 
