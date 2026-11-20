@@ -94,8 +94,8 @@ def build_architecture_figure(language: str):
     ax_output.set_xlabel("p");ax_output.set_xlim(0, 1.05)
     ax_output.set_title("D  " + text["output"], pad=8)
     for pos, value in enumerate(PROBABILITIES[order]):ax_output.text(value+0.015, pos, f"{value:.3f}", va="center", fontsize=8)
-    # A ordem A-B-C-D indica o fluxo; não se adicionam setas em posições
-    # calculadas antes do constrained layout.
+    # Panel letters establish the reading order.
+
     fig.canvas.draw()
     return fig
 

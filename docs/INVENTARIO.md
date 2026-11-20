@@ -32,3 +32,5 @@ Os notebooks 01–05 foram recuperados do commit `989ac5ab1cfbb938f690dfbad571b5
 Eles registram uma prova de conceito em RAVDESS. O notebook 04 conserva uma configuração de oito classes, enquanto o 05 remapeia os rótulos para sete classes e espera um checkpoint correspondente. São estados históricos: não se deve executar 04 e 05 em sequência presumindo compatibilidade entre os checkpoints. Sua reprodução depende dos CSVs e do checkpoint compatível com cada configuração. Esses resultados não sustentam os números definitivos em CREMA-D.
 
 Os notebooks 06 e 07 conservam a evolução do experimento CREMA-D. Para uma nova execução da dissertação, use o 08.
+
+[13 — Explainability evaluation](../notebooks/13_cremad_explainability_audit.ipynb) · [Open in Colab](https://colab.research.google.com/github/andreinsardi/bruna-dissertacao-colabs/blob/v1.2.0/notebooks/13_cremad_explainability_audit.ipynb).

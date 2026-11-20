@@ -37,7 +37,7 @@ As saídas são geradas em português e inglês, em PNG de alta resolução e PD
     ),
     code(
         r"""
-# Dependências leves. PyTorch, NumPy, pandas e Matplotlib já vêm no Colab.
+# PyTorch, NumPy, pandas, and Matplotlib are preinstalled in Colab.
 %pip install -q --upgrade opencv-python-headless seaborn
 """
     ),
@@ -75,7 +75,7 @@ except ImportError as exc:
 drive.mount("/content/drive", force_remount=False)
 
 # ---------------------------------------------------------------------------
-# Configuração: normalmente não é necessário alterar nada abaixo.
+# Set paths or select figure panels here.
 # ---------------------------------------------------------------------------
 RUN_ID = "20260809_223452_c0613d3c"
 BASE_DIR = Path("/content/drive/MyDrive/cremad_fairness_xai")
@@ -83,9 +83,9 @@ RUN_DIR = BASE_DIR / "runs" / RUN_ID
 OUTPUT_ROOT = BASE_DIR / "paper_figures_v3" / RUN_ID
 LOCAL_CACHE_DIR = Path("/content/cremad_figures_v3_cache")
 
-COPY_HEAVY_FILES_TO_LOCAL = True  # acelera leituras repetidas; a cópia é retomável
-FORCE_FIGURES = set()             # ex.: {"experimental", "xai"}
-DOWNLOAD_FINAL_ZIP = False        # True baixa o ZIP ao final
+COPY_HEAVY_FILES_TO_LOCAL = True  # Cache large inputs locally to speed up repeated reads.
+FORCE_FIGURES = set()             # Example: {"experimental", "xai"}.
+DOWNLOAD_FINAL_ZIP = False        # Download the ZIP when execution finishes.
 SEED = 42
 
 PT_DIR = OUTPUT_ROOT / "overleaf_ptbr" / "figures"
@@ -131,7 +131,7 @@ def sha256_file(path: Path, chunk_size: int = 1024 * 1024) -> str:
 
 
 def localize(name: str) -> Path:
-    # Copia arquivos pesados para o disco efêmero, retomando por tamanho.
+    # Copy large files to local storage and verify the size before reuse.
     source = PATHS[name]
     if not COPY_HEAVY_FILES_TO_LOCAL or source.is_dir():
         return source
@@ -170,7 +170,7 @@ print("Auditoria dos artefatos de entrada gravada.")
     ),
     code(
         r"""
-# Carregamento dos dados canônicos.
+# Load the experiment inputs.
 with np.load(LOCAL["landmarks"], allow_pickle=False) as data:
     X_BASE = data["X_base"].astype(np.float32)
     Y = data["y"].astype(int)
@@ -222,7 +222,7 @@ display(
     ),
     code(
         r"""
-# Definições exatas da execução e utilitários visuais.
+# Define the model inputs and plotting helpers.
 REGION_IDS = {
     "lips": {0,13,14,17,37,39,40,61,78,80,81,82,84,87,88,91,95,146,178,181,185,191,267,269,270,291,308,310,311,312,314,317,318,321,324,375,402,405,409,415},
     "left_eye": {249,263,362,373,374,380,381,382,384,385,386,387,388,390,398,466},
@@ -829,9 +829,9 @@ A amostra representativa é escolhida por regra determinística: o vídeo cuja a
     ),
     code(
         r"""
-# A representatividade é definida pela massa absoluta de atribuição. Embora o
-# experimento tenha persistido |IG|, a expressão permanece correta caso uma
-# versão futura do artefato preserve o sinal.
+# Select the example closest to the median absolute attribution mass.
+
+
 IG_TOTAL = np.abs(IG_ATTR).reshape(len(IG_ATTR), -1).sum(axis=1)
 IG_SAMPLE = int(np.argmin(np.abs(IG_TOTAL - np.median(IG_TOTAL))))
 XAI_ROW = int(IG_INDICES[IG_SAMPLE])
@@ -949,7 +949,7 @@ Esta etapa registra hashes das figuras e produz um ZIP pequeno, pronto para insp
     ),
     code(
         r"""
-# Reconstitui o manifesto inclusive quando algumas etapas foram puladas.
+# Rebuild the manifest for both generated and reused panels.
 records = []
 for language, directory in [("pt", PT_DIR), ("en", EN_DIR)]:
     for path in sorted(directory.glob("*.png")):
@@ -996,8 +996,8 @@ readme = f'''# CREMA-D paper figures V3
 '''
 (OUTPUT_ROOT / "README.md").write_text(readme, encoding="utf-8")
 
-# O ZIP fica fora da pasta compactada para nunca incluir a si próprio em uma
-# reexecução. O conteúdo continua persistente no mesmo diretório pai do Drive.
+# Write the ZIP next to the figure directory so it cannot include itself.
+
 zip_base = OUTPUT_ROOT.parent / f"cremad_paper_figures_v3_{RUN_ID}"
 zip_path = Path(shutil.make_archive(str(zip_base), "zip", root_dir=OUTPUT_ROOT))
 

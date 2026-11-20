@@ -24,11 +24,26 @@ def code_text(notebook: dict) -> str:
     return "\n".join("".join(c["source"]) for c in notebook["cells"] if c["cell_type"] == "code")
 
 
+class NormalizeEmbeddedCode(ast.NodeTransformer):
+    """Compare compiled Python payloads without treating their comments as behavior."""
+
+    def visit_Call(self, node: ast.Call) -> ast.Call:
+        self.generic_visit(node)
+        if (isinstance(node.func, ast.Name) and node.func.id == "compile"
+                and node.args and isinstance(node.args[0], ast.Constant)
+                and isinstance(node.args[0].value, str)):
+            embedded = self.visit(ast.parse(node.args[0].value))
+            node.args[0] = ast.Constant(ast.dump(embedded, include_attributes=False))
+        return node
+
+
 def code_ast(notebook: dict) -> list[str]:
     transformer = TransformerManager()
-    return [ast.dump(ast.parse(transformer.transform_cell("".join(c["source"]))),
-                     include_attributes=False)
-            for c in notebook["cells"] if c["cell_type"] == "code"]
+    return [
+        ast.dump(NormalizeEmbeddedCode().visit(ast.parse(
+            transformer.transform_cell("".join(cell["source"])))), include_attributes=False)
+        for cell in notebook["cells"] if cell["cell_type"] == "code"
+    ]
 
 
 def compile_embedded(tree: ast.AST, label: str) -> int:

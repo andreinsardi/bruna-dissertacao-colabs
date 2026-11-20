@@ -51,7 +51,7 @@ if missing:raise FileNotFoundError('Artefatos canônicos ausentes: '+str(missing
 print('Execução original:',RUN_ID)
 print('Saídas complementares:',OUTPUT_DIR)
 print('Python:',platform.python_version(),'Torch:',torch.__version__,'NumPy:',np.__version__,'pandas:',pd.__version__)
-'''),cell('code',f'''# Módulos locais auditados, incorporados sem depender de um GitHub mutável.
+'''),cell('code',f'''# Verify and load the embedded analysis modules.
 MODULES = {modules!r}
 EXPECTED_HASHES = {hashes!r}
 CODE_DIR=Path('/content/bruna_revision_code')
@@ -137,7 +137,7 @@ completion={'status':'completed','scope':'supplementary_experiments_only',
 zip_path=shutil.make_archive(str(OUTPUT_DIR.parent/'bruna_revision_final_20261107_experiments'),'zip',root_dir=OUTPUT_DIR)
 print('EXPERIMENTOS COMPLEMENTARES CONCLUÍDOS:',zip_path)
 ''')]
-    # A pasta de treino é definida pelo módulo e conferida na geração.
+    # The training module defines the output directory.
     experiments=modules['bruna_revision_experiments.py']
     if '/"training"' not in experiments and '/ "training"' not in experiments:
         raise RuntimeError('Conferir o nome da pasta de resultados de treinamento no módulo.')

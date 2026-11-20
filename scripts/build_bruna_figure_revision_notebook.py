@@ -31,7 +31,7 @@ def build():
                 text=text.replace('    target_dir = PT_DIR if language == "pt" else EN_DIR','    layout_audit = validate_figure_layout(fig) if basename in {"visao_experimental_comparativa_v2.png", "arquitetura_emot_facial_v2.png"} else {"manual_visual_review_required": True}\n    target_dir = PT_DIR if language == "pt" else EN_DIR')
                 text=text.replace('"source_note": source_note,','"source_note": source_note,\n            "layout_version": "v4-20261107",\n            "layout_audit": json.dumps(layout_audit),')
             if 'FORCE_FIGURES = set()' in text:text=text.replace('FORCE_FIGURES = set()','FORCE_FIGURES = {"experimental", "architecture"}')
-            # Instalação sem upgrade global que poderia mudar NumPy do Colab.
+            # Install only the dependencies needed by the figure notebook.
             text=text.replace('%pip install -q --upgrade opencv-python-headless seaborn','%pip install -q opencv-python-headless seaborn')
             cell['execution_count']=None;cell['outputs']=[]
             python_text='\n'.join('pass # Colab magic' if line.lstrip().startswith('%') else line for line in text.splitlines())

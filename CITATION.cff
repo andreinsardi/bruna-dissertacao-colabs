@@ -1,19 +1,19 @@
 cff-version: 1.2.0
-message: "Ao utilizar este acervo, cite esta versão e a dissertação de Bruna Carolina Rodrigues."
+message: "Cite this software release and the associated dissertation."
 type: software
-title: "Colabs da dissertação de Bruna Carolina Rodrigues: reconhecimento de expressões faciais, equidade e explicabilidade"
+title: "Video facial expression recognition with EmoT"
 authors:
   - family-names: Rodrigues
     given-names: Bruna Carolina
-version: 1.1.0
-date-released: 2026-11-07
+version: 1.2.0
+date-released: 2026-11-20
 repository-code: "https://github.com/andreinsardi/bruna-dissertacao-colabs"
-url: "https://github.com/andreinsardi/bruna-dissertacao-colabs"
-abstract: "Notebooks e módulos associados à dissertação em Tecnologia da FT/UNICAMP, incluindo o protocolo definitivo CREMA-D, o acervo histórico RAVDESS e a revisão com repetições, ablação, testes dos mapas explicativos e avaliação congelada entre bases."
+url: "https://github.com/andreinsardi/bruna-dissertacao-colabs/releases/tag/v1.2.0"
+abstract: "Reproducible evaluation of facial expression classification, demographic disparities, explainability, and transfer from CREMA-D to RAVDESS."
 keywords:
   - CREMA-D
   - RAVDESS
   - facial-expression-recognition
-  - explainable-ai
+  - explainability
   - fairness
   - transformers
